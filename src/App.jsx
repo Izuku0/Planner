@@ -21,7 +21,7 @@ const App = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/calculator/calculate", inputs);
+      const response = await axios.post("https://planner-1-ohh8.onrender.com/api/calculator/calculate", inputs);
       setResults(response.data);
     } catch (error) {
       console.error("Error calculating:", error);
